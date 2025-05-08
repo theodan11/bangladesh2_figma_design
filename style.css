@@ -1,0 +1,219 @@
+body {
+    font-family: "Fira Sans", sans-serif;
+}
+
+
+nav {
+    .m-navbar-brand {
+        width: 222px;
+        height: 32px;
+        font-weight: bold;
+        font-size: 32px;
+    }
+}
+
+
+
+/* hero section*/
+.hero__section {
+    /* background: #000; */
+    margin-bottom: 80px;
+
+    .inner_box {
+        padding: 0 60px;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        gap: 60px;
+        width: 100%;
+        height: 560px;
+        background-color: #C6E4D6;
+        border-radius: 24px;
+
+        .left_container {
+            /* background-color: red; */
+            max-width: 622px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+
+            h1 {
+                font-size: 24px;
+                font-weight: 500;
+                color: #0E0E0E;
+                opacity: 50%;
+            }
+
+            h2 {
+                font-weight: bold;
+                font-size: 56px;
+                color: #0E0E0E;
+            }
+
+            .m-btn-custom {
+                cursor: pointer;
+                margin-top: 32px;
+                font-weight: 600;
+                font-size: 18px;
+                width: 270px;
+                height: 56px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                background-color: #006A50;
+                color: #FFF;
+                transition: all .3s ease;
+
+                &:hover {
+                    background-color: #C6E4D6;
+                    color: #006A50;
+                    border: 3px solid #006A50;
+                }
+            }
+
+
+        }
+
+        .right_container {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+.pillar__section {
+    margin-bottom: 60px;
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .card_container {
+        .m-card-item {
+
+            border-radius: 16px;
+            box-shadow: 0 0 8px 1px #b3b2b2;
+            width: 100%;
+            max-width: 302px;
+            height: 244px;
+            background-color: #FFF;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+        }
+    }
+}
+
+/* The Vision Section */
+.vision__section {
+    margin-bottom: 80px;
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #0E0E0E;
+        margin-bottom: 24px;
+    }
+
+    p {
+
+        font-size: 16px;
+        color: #0E0E0E;
+        opacity: 70%;
+        margin-bottom: 64px;
+
+    }
+
+    .card_container {
+
+        .m-card-item {
+            padding: 24px;
+            display: flex;
+
+            flex-direction: column;
+            align-items: start;
+
+            border-radius: 16px;
+            width: 100%;
+            max-width: 410px;
+            min-height: 325px;
+            height: 100%;
+        }
+
+        .m-card-primary {
+            background-color: #548ff53a;
+            /* opacity: 20%; */
+        }
+
+        .m-card-success {
+            background-color: #09a15d5e;
+        }
+
+        .m-card-warning {
+            background-color: #ffc4395d;
+
+        }
+
+    }
+
+    .quote {
+        padding: 16px;
+        margin-top: 20px;
+        background-color: #FFF;
+        border: 1px solid #e2e2e2;
+        border-radius: 16px;
+    }
+}
+
+
+/* Your Opinion Section */
+.opinion__section {
+    margin-bottom: 80px;
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #0E0E0E;
+        margin-bottom: 24px;
+    }
+
+    .opinion_table {
+        padding: 32px;
+        background-color: #FFF;
+        border-radius: 16px;
+        border: 1px solid #e0e0e0;
+
+        select {
+            border: 1.8px solid #006A50;
+            background-color: #006a503a;
+            color: #0E0E0E;
+            font-weight: 500;
+            height: 44px;
+            width: 152px;
+            padding: 5px 12px;
+
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .hero__section {
+        .inner_box {
+            height: auto;
+            padding: 32px 20px;
+
+            .left_container {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
