@@ -1,3 +1,9 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: "Fira Sans", sans-serif;
 }
@@ -202,6 +208,64 @@ nav {
             padding: 5px 12px;
 
         }
+    }
+}
+
+
+/* Recent NEWS */
+.recent__section {
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #0E0E0E;
+        margin-bottom: 24px;
+    }
+
+    p {
+
+        font-size: 16px;
+        color: #0E0E0E;
+        opacity: 70%;
+        margin-bottom: 64px;
+
+    }
+
+    .card_container {
+        margin-bottom: 16px;
+        background-color: #FFF;
+        padding: 48px;
+        border-radius: 24px;
+        border: 1px solid #e5e3e3;
+
+        .left_container {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 32px;
+                color: #0e0e0ea4;
+            }
+            img{
+                /* background-color: red; */
+              max-width: 134px;
+              height: 40px;
+            }
+
+            .time_and_date {
+                span {
+                    font-size: 16px;
+                    color: #0e0e0e50;
+
+                }
+            }
+
+            p{
+                font-size: 16px;
+                color: #0e0e0ec9;
+
+            }
+        }
+
     }
 }
 
