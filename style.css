@@ -214,6 +214,7 @@ nav {
 
 /* Recent NEWS */
 .recent__section {
+    margin-bottom: 80px;
     h1 {
         font-size: 40px;
         font-weight: bold;
@@ -268,6 +269,107 @@ nav {
 
     }
 }
+
+
+
+.donate__section{
+    margin-bottom: 80px;
+    .header_sec{
+        margin: 16px;
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #0E0E0E;
+            margin-bottom: 24px;
+        }
+    
+        p {
+    
+            font-size: 16px;
+            color: #0E0E0E;
+            opacity: 70%;
+            margin-bottom: 64px;
+    
+        }
+    }
+    .donation_box{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        .custom-radio{
+            cursor: pointer;
+            .radio_box{
+                user-select: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 252px;
+                height: 128px;
+                background-color: #FFF;
+                border: 1px solid #e5e3e3;
+                border-radius: 16px;
+
+                font-weight: bold;
+                font-size: 40px;
+                color: #0e0e0ec5;
+            }
+            input{
+                display: none;
+                &:checked + .radio_box{
+                    background-color: #006a5088;
+                }
+            }
+
+            
+        }
+
+        .donate_amount{
+            background-color: rgb(255, 255, 255);
+            max-width: 1032px;
+            width: 100%;
+            height: 64px;
+            padding: 20px 40px;
+            border: 1px solid #c8c5c5;
+
+            input{
+                border: none;
+                width: 100%;
+                outline: none;
+                text-align: center;
+            }
+
+        }
+    }
+
+   
+}
+
+
+footer{
+padding: 50px 0 ;
+background-color: #FFF;
+    .footer_items{
+        h1{
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .social_links{
+            margin-top: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            .s_item{
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+
 
 @media(max-width: 767px) {
     .hero__section {
